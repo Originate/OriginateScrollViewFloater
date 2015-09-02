@@ -50,6 +50,8 @@ NS_ASSUME_NONNULL_END
         _scrollView = scrollView;
         _floaterView = floaterView;
         
+        self.frame = scrollView.bounds;
+        
         [self setupView];
     }
     return self;
