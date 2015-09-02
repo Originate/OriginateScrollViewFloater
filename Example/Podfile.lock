@@ -1,0 +1,10 @@
+PODS:
+  - Originate+ScrollViewFloater (0.0.1)
+
+DEPENDENCIES:
+  - Originate+ScrollViewFloater
+
+SPEC CHECKSUMS:
+  Originate+ScrollViewFloater: 57bd1dea0956087e3f846e67e3c3fe7f72af74cc
+
+COCOAPODS: 0.38.2
