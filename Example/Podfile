@@ -1,0 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/Originate/CocoaPods.git'
+
+inhibit_all_warnings!
+platform :ios, '7.0'
+
+pod 'Originate+ScrollViewFloater'
+
