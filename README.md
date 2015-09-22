@@ -52,3 +52,8 @@ CGPoint offset = ... // desired offset of scrollView at which floater should app
                            [self scrollToTop];
                        }];
 ```
+
+
+## License
+
+OriginateScrollViewFloater is available under the MIT license. See the [LICENSE](/LICENSE) file for more info.
