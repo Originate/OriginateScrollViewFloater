@@ -39,6 +39,12 @@ NS_ASSUME_NONNULL_END
     return CGRectContainsPoint(self.floaterView.frame, point);
 }
 
+- (void)setNeedsLayout
+{
+    [super setNeedsLayout];
+    self.frame = self.scrollView.bounds;
+}
+
 
 #pragma mark - OriginateScrollViewFloater
 
