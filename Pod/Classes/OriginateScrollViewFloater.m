@@ -94,18 +94,35 @@ NS_ASSUME_NONNULL_END
 
 - (BOOL)shouldShowFloater
 {
-    switch (self.direction) {
-        case OriginateScrollViewFloaterDirectionTop:
-            return self.scrollView.contentOffset.y >= self.appearanceOffset.y;
-            
-        case OriginateScrollViewFloaterDirectionBottom:
-            return self.scrollView.contentOffset.y <= self.appearanceOffset.y;
-            
-        case OriginateScrollViewFloaterDirectionLeft:
-            return self.scrollView.contentOffset.x >= self.appearanceOffset.x;
-            
-        case OriginateScrollViewFloaterDirectionRight:
-            return self.scrollView.contentOffset.x <= self.appearanceOffset.x;
+    if (self.isVisible) {
+        switch (self.direction) {
+            case OriginateScrollViewFloaterDirectionTop:
+                return self.scrollView.contentOffset.y >= self.disappearanceOffset.y;
+                
+            case OriginateScrollViewFloaterDirectionBottom:
+                return self.scrollView.contentOffset.y <= self.disappearanceOffset.y;
+                
+            case OriginateScrollViewFloaterDirectionLeft:
+                return self.scrollView.contentOffset.x >= self.disappearanceOffset.x;
+                
+            case OriginateScrollViewFloaterDirectionRight:
+                return self.scrollView.contentOffset.x <= self.disappearanceOffset.x;
+        }
+    }
+    else {
+        switch (self.direction) {
+            case OriginateScrollViewFloaterDirectionTop:
+                return self.scrollView.contentOffset.y >= self.appearanceOffset.y;
+                
+            case OriginateScrollViewFloaterDirectionBottom:
+                return self.scrollView.contentOffset.y <= self.appearanceOffset.y;
+                
+            case OriginateScrollViewFloaterDirectionLeft:
+                return self.scrollView.contentOffset.x >= self.appearanceOffset.x;
+                
+            case OriginateScrollViewFloaterDirectionRight:
+                return self.scrollView.contentOffset.x <= self.appearanceOffset.x;
+        }
     }
 }
 

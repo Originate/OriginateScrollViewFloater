@@ -27,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D726EE71BF636750040DEFD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		5D726EE91BF636D20040DEFD /* Pod */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Pod; path = ../Pod; sourceTree = "<group>"; };
+		5D726EEC1BF639F60040DEFD /* OriginateScrollViewFloater.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = OriginateScrollViewFloater.podspec; path = ../../OriginateScrollViewFloater.podspec; sourceTree = "<group>"; };
 		6CE9A02E738B1BB119266091 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88AD75484CDC7CB63DF44CBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F11229E1B96B9A500BD0352 /* OriginateScrollViewFloaterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OriginateScrollViewFloaterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +78,7 @@
 		9F1122951B96B9A500BD0352 = {
 			isa = PBXGroup;
 			children = (
+				5D726EE91BF636D20040DEFD /* Pod */,
 				9F1122A01B96B9A500BD0352 /* OriginateScrollViewFloaterExample */,
 				9F1122BA1B96B9A500BD0352 /* OriginateScrollViewFloaterExampleTests */,
 				9F11229F1B96B9A500BD0352 /* Products */,
@@ -109,6 +113,8 @@
 		9F1122A11B96B9A500BD0352 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5D726EE71BF636750040DEFD /* Podfile */,
+				5D726EEC1BF639F60040DEFD /* OriginateScrollViewFloater.podspec */,
 				9F1122A21B96B9A500BD0352 /* Info.plist */,
 				9F1122A31B96B9A500BD0352 /* main.m */,
 			);
@@ -152,6 +158,7 @@
 				9F11229B1B96B9A500BD0352 /* Frameworks */,
 				9F11229C1B96B9A500BD0352 /* Resources */,
 				1DC43418EFEE0E91C9440D70 /* Copy Pods Resources */,
+				4FF2D5402BE66E527B5CBF1F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +257,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF2D5402BE66E527B5CBF1F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8B465C63BC91EB2192F5C4B1 /* Check Pods Manifest.lock */ = {

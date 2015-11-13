@@ -1,10 +1,14 @@
 PODS:
-  - Originate+ScrollViewFloater (0.0.1)
+  - OriginateScrollViewFloater (0.0.4)
 
 DEPENDENCIES:
-  - Originate+ScrollViewFloater
+  - OriginateScrollViewFloater (from `..`)
+
+EXTERNAL SOURCES:
+  OriginateScrollViewFloater:
+    :path: ..
 
 SPEC CHECKSUMS:
-  Originate+ScrollViewFloater: 57bd1dea0956087e3f846e67e3c3fe7f72af74cc
+  OriginateScrollViewFloater: d5428a82222b5668ca1fdd1523507b210a160d9a
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

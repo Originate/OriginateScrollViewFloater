@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "OriginateScrollViewFloater"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "A customizable UIScrollView floater element."
   s.homepage         = "https://github.com/Originate/OriginateScrollViewFloater"
   s.license          = 'MIT'
